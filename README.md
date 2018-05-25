@@ -72,4 +72,5 @@ Download: [for Windows and MacOS](https://code.visualstudio.com/).
 3. `ctrl/cmd`+`S` or close with Save.
 
 ## Note
+
 Don't forget add TeX Live into `PATH` variables after installation in Windows!
