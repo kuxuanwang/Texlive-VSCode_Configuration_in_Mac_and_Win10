@@ -1,2 +1,63 @@
 {
+    {
+        "latex-workshop.view.pdf.viewer": "tab",
+    
+        
+        "latex-workshop.latex.recipes": [
+           
+            {
+              "name": "latexmk -> bibtex -> xelatex*2",
+              "tools": [
+                "latexmk",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+              ]
+            }
+        ],
+        "latex-workshop.latex.clean.enabled": true,
+    
+        "latex-workshop.latex.clean.fileTypes": [
+        
+          "*.aux",
+        
+          "*.bbl",
+          
+          "*.blg",
+          
+          "*.idx",
+          
+          "*.ind",
+          
+          "*.lof",
+          
+          "*.lot",
+          
+          "*.out",
+          
+          "*.toc",
+          
+          "*.acn",
+        
+          "*.acr",
+          
+          "*.alg",
+          
+          "*.glg",
+          
+          "*.glo",
+          
+          "*.gls",
+          
+          "*.ist",
+          
+          "*.fls",
+          
+          "*.log",
+        
+          "*.fdb_latexmk",
+        ],
+        "editor.wordWrap": "on",
+        "workbench.colorTheme": "One Dark Pro"
+      }
 }
