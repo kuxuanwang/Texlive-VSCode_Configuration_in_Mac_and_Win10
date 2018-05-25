@@ -14,6 +14,8 @@ Downlaod: [TeX Live for Windows](https://www.tug.org/texlive/windows.html), [Mac
 
 Download: [for Windows and MacOS](https://code.visualstudio.com/).
 
+![Github logo](https://github.com/kuxuanwang/Texlive-VSCode_Configuration_in_Mac_and_Win10/blob/master/github-mark.png)
+
 ```json
 {
     "latex-workshop.view.pdf.viewer": "tab",
