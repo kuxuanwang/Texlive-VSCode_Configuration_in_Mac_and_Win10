@@ -26,9 +26,7 @@ Download: [for Windows and MacOS](https://code.visualstudio.com/).
 
 ## **.json Configuration**
 
-### **For Windows**
-
-1. Using keyboard shortcut (`ctrl`+`,`) to quick open `Settings`;
+1. Using keyboard shortcut (`ctrl/cmd`+`,`) to quick open `Settings`;
 2. Add the following .json code into the Settings:
 
 ```json
@@ -71,11 +69,7 @@ Download: [for Windows and MacOS](https://code.visualstudio.com/).
   }
 ```
 
-3. `ctrl`+`S` or close with Save.
+3. `ctrl/cmd`+`S` or close with Save.
 
-### **For MacOS**
-
-1. Using keyboard shortcut (`cmd`+`,`) to quick open `Settings`;
-2. Add the following .json code into the Settings:
-
-```json
+## Note
+Don't forget add TeX Live into `PATH` variables after installation in Windows!
