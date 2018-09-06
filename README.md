@@ -31,41 +31,119 @@ Download: [for Windows and MacOS](https://code.visualstudio.com/).
 
 ```json
 {
-    "latex-workshop.view.pdf.viewer": "tab",
+    
+
+    "latex-workshop.latex.tools": [
+	    {
+	        "name": "xelatex",
+	        "command": "xelatex",
+	        "args": [
+	          "-synctex=1",
+	          "-interaction=nonstopmode",
+	          "-file-line-error",
+	          "%DOC%"
+        	]
+        },
+        {
+          "name": "latexmk",
+          "tools": [
+            "latexmk"
+          ]
+        },
+		{
+	        "name": "pdflatex",
+	        "command": "pdflatex",
+	        "args": [
+	          "-synctex=1",
+	          "-interaction=nonstopmode",
+	          "-file-line-error",
+	          "%DOC%"
+	        ]
+	    },
+	    {
+	        "name": "bibtex",
+	        "command": "bibtex",
+	        "args": [
+	          "%DOCFILE%"
+	    	]
+        },
+        {
+	        "name": "pdflatex",
+	        "command": "pdflatex",
+	        "args": [
+	          "-synctex=1",
+	          "-interaction=nonstopmode",
+	          "-file-line-error",
+	          "%DOC%"
+	        ]
+	    }
+    ],
+    
     "latex-workshop.latex.recipes": [
         {
-          "name": "latexmk -> bibtex -> xelatex*2",
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+              "pdflatex",
+              "bibtex",
+              "pdflatex",
+              "pdflatex"
+            ]
+          },
+          {
+            "name": "latexmk -> bibtex -> xelatex*2",
+            "tools": [
+              "latexmk",
+              "bibtex",
+              "xelatex",
+              "xelatex"
+            ]
+          },
+        {
+          "name": "PDFLaTeX",
           "tools": [
-            "latexmk",
+            "pdflatex"
+          ]
+      	},
+        {
+          "name": "XeLaTeX",
+          "tools": [
+            "xelatex"
+          ]
+        },
+        {
+          "name": "BibTeX",
+          "tools": [
+            "bibtex"
+          ]
+        },
+        {
+          "name": "xelatex -> bibtex -> xelatex*2",
+          "tools": [
+            "xelatex",
             "bibtex",
             "xelatex",
             "xelatex"
           ]
+        },
+        {
+          "name": "bibtex -> xelatex",
+          "tools": [
+          
+            "bibtex",
+            "xelatex",
+
+          ]
         }
     ],
-    "latex-workshop.latex.clean.enabled": true,
+    
 
-    "latex-workshop.latex.clean.fileTypes": [
-      "*.aux",
-      "*.bbl",
-      "*.blg",
-      "*.idx",
-      "*.ind",
-      "*.lof",
-      "*.lot",
-      "*.out",
-      "*.toc",
-      "*.acn",
-      "*.acr",
-      "*.alg",
-      "*.glg",
-      "*.glo",
-      "*.gls",
-      "*.ist",
-      "*.fls",
-      "*.log",
-      "*.fdb_latexmk",
-    ],
+
+    "latex-workshop.view.pdf.viewer": "browser",
+    
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0
   }
 ```
 
